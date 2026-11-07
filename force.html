@@ -101,4 +101,19 @@ document.addEventListener('DOMContentLoaded',function(){
 </div>
 <script src="js/concepts.js" defer></script><script src="js/c-force.js" defer></script><script src="js/force.js"></script>
 
-</body></html>
+</body></html><style id="uni">
+/* 五島統一：上方控制列、提示、題目、事件卡、實驗室清單 */
+.hud .tools{flex-basis:100%;justify-content:flex-start}
+.pill.score{font-size:15px}
+@media (max-width:640px){.pill.score{font-size:15px}}
+.hintbtn{align-self:flex-start;border:0;background:var(--chip);color:var(--ink);border-radius:99px;padding:8px 14px;min-height:40px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;margin-top:8px}
+.hintbtn:disabled{opacity:.6;cursor:default}
+.opt.elim{opacity:.35;text-decoration:line-through}
+.evcard{background:var(--card,#fff);border:2px dashed var(--accent);border-radius:16px;padding:12px 14px;margin:4px 0 12px}
+.evcard .evtag{display:inline-block;font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.04em}
+.evcard b{display:block;font-size:18px;margin:2px 0 4px}
+.evcard p{margin:0;line-height:1.7;font-size:15px}
+.evcard .evgoal{font-weight:800}
+.evcard .evdone{font-weight:800;color:#2f9a5d}
+.task.sim{border-color:#2f86a6}.task.sim .ic{background:#dff0f6;color:#2f86a6;font-size:30px}
+</style>

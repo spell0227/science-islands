@@ -79,7 +79,7 @@ window.BOOT=(function(){
   </div>
 </header>
 <div id="tbubble" hidden></div>
-<div class="hint" id="hint"><b>點一座島開始挑戰</b>　五片海域依序是第1～5章，島旁小船是會考題型練習　<span class="dim">拖曳轉動・滾輪或雙指縮放</span></div>
+<div class="hint" id="hint"><b>點一座島開始挑戰</b>　中央是愛因斯坦島（點它看作者介紹），五片海域依序是 2上第1～5章　<span class="dim">拖曳轉動・滾輪或雙指縮放</span></div>
 <section id="list" hidden><div class="grid" id="listGrid"></div></section>
 <div id="scrim"></div>
 <aside id="panel" role="dialog" aria-modal="true" aria-labelledby="ptitle">
@@ -110,4 +110,19 @@ window.BOOT=(function(){
 <script>BOOT.done('page')</script>
 <script src="js/concepts.js" defer></script><script src="js/c-einstein.js" defer></script><script src="js/einstein.js"></script>
 
-</body></html>
+</body></html><style id="uni">
+/* 五島統一：上方控制列、提示、題目、事件卡、實驗室清單 */
+.hud .tools{flex-basis:100%;justify-content:flex-start}
+.pill.score{font-size:15px}
+@media (max-width:640px){.pill.score{font-size:15px}}
+.hintbtn{align-self:flex-start;border:0;background:var(--chip);color:var(--ink);border-radius:99px;padding:8px 14px;min-height:40px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;margin-top:8px}
+.hintbtn:disabled{opacity:.6;cursor:default}
+.opt.elim{opacity:.35;text-decoration:line-through}
+.evcard{background:var(--card,#fff);border:2px dashed var(--accent);border-radius:16px;padding:12px 14px;margin:4px 0 12px}
+.evcard .evtag{display:inline-block;font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.04em}
+.evcard b{display:block;font-size:18px;margin:2px 0 4px}
+.evcard p{margin:0;line-height:1.7;font-size:15px}
+.evcard .evgoal{font-weight:800}
+.evcard .evdone{font-weight:800;color:#2f9a5d}
+.task.sim{border-color:#2f86a6}.task.sim .ic{background:#dff0f6;color:#2f86a6;font-size:30px}
+</style>
